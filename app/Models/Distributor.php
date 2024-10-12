@@ -1,12 +1,10 @@
 <?php
 
 namespace App\Models;
-
-Use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Distributor extends Authenticatable
+class Distributor extends Model
 {
     use HasFactory;
     protected $fillable = [

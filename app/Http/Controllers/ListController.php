@@ -13,6 +13,7 @@ class ListController extends Controller
         $admins = Admin::all();
         $users = User::all();
         $distributors = Distributor::all();
-        return view('welcome', compact('admins', 'users', 'distributors'));
+        $products = Product::all();
+        return view('welcome', compact('admins', 'users', 'distributors', 'products'));
     }
 }
